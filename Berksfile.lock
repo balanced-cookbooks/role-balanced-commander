@@ -5,7 +5,7 @@ DEPENDENCIES
 
 GRAPH
   apt (2.3.8)
-  balanced (1.0.58)
+  balanced (1.0.64)
     balanced-apt (~> 1.0)
     balanced-monit (~> 1.0)
     balanced-nginx (~> 1.0)
@@ -152,7 +152,7 @@ GRAPH
     yum-epel (>= 0.0.0)
   rabbitmq (2.4.2)
     erlang (>= 0.9.0)
-  role-balanced-commander (1.0.0)
+  role-balanced-commander (1.0.2)
     balanced (~> 1.0.54)
     balanced-devpi (~> 1.0)
     balanced-rundeck (~> 1.0.2)
@@ -178,7 +178,7 @@ GRAPH
   rump (1.2.2)
     balanced-apt (>= 0.0.0)
     git (>= 0.0.0)
-  rundeck (1.0.2)
+  rundeck (1.0.4)
     apt (>= 0.0.0)
     java (>= 0.0.0)
     poise (>= 0.0.0)

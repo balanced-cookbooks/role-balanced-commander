@@ -4,7 +4,7 @@ driver:
   customize:
     memory: 1024
   network:
-  - ["forwarded_port", {guest: 4440, host: 4440}]
+  - ["forwarded_port", {guest: 4440, host: 4444}]
 
 provisioner:
   name: chef_solo
@@ -20,6 +20,9 @@ provisioner:
       precog:
         alert_addrs:
         - test+precog@balancedpayments.com
+      balanced:
+        jobs:
+          failure_recipient: fail@vandelay.io
 
 platforms:
   - name: ubuntu-12.04
@@ -27,4 +30,4 @@ platforms:
 suites:
   - name: default
     run_list:
-    - recipe[role-balanced-commander::integration]
+    - recipe[role-balanced-commander::dev]
