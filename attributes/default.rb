@@ -10,3 +10,6 @@ default['balanced']['jobs']['failure_notify_url'] = 'https://cron.vandelay.io'
 
 default['precog']['jobs']['failure_recipient'] = 'cron+precog@balancedpayments.com'
 default['precog']['jobs']['failure_notify_url'] = 'https://cron.vandelay.io'
+
+default['balanced-rundeck']['jobs']['failure_recipient'] = 'cron+infra@balancedpayments.com'
+default['balanced-rundeck']['jobs']['failure_notify_url'] = 'https://cron.vandelay.io'

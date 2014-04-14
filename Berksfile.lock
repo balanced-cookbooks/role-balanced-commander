@@ -5,7 +5,7 @@ DEPENDENCIES
 
 GRAPH
   apt (2.3.8)
-  balanced (1.0.64)
+  balanced (1.0.66)
     balanced-apt (~> 1.0)
     balanced-monit (~> 1.0)
     balanced-nginx (~> 1.0)
@@ -62,7 +62,7 @@ GRAPH
     python (~> 1.4)
     rump (~> 1.0)
     slurp (~> 1.0)
-  balanced-rundeck (1.0.4)
+  balanced-rundeck (1.0.6)
     balanced-citadel (>= 0.0.0)
     balanced-user (~> 1.0.14)
     partial_search (~> 1.0.7)
@@ -138,7 +138,7 @@ GRAPH
   postfix (3.1.6)
   postgresql (0.13.1)
     apt (>= 1.9.0)
-  precog (1.2.3)
+  precog (1.2.8)
     balanced-apt (~> 1.0)
     balanced-monit (~> 1.0)
     balanced-rabbitmq (~> 1.0)
