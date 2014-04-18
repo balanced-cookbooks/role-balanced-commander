@@ -6,9 +6,6 @@ include_recipe 'balanced-rundeck'
 include_recipe 'balanced-rundeck::client'
 include_recipe 'balanced-rundeck::infra'
 
-include_recipe 'balanced::jobs'
-include_recipe 'precog::jobs'
-
 rundeck_user 'balanced' do
   password citadel['balanced/rundeck.password']
   roles %w{admin user}
