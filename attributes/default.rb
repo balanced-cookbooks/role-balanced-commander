@@ -13,3 +13,7 @@ default['precog']['jobs']['failure_notify_url'] = 'https://cron.vandelay.io'
 
 default['balanced-rundeck']['jobs']['failure_recipient'] = 'cron+infra@balancedpayments.com'
 default['balanced-rundeck']['jobs']['failure_notify_url'] = 'https://cron.vandelay.io'
+
+# rundeck-sql
+default['rundeck-sql']['failure_email'] = 'risk+reports@balancedpayments.com'
+default['rundeck-sql']['failure_url'] = 'https://cron.vandelay.io'

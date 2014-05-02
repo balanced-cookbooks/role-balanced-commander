@@ -4,3 +4,4 @@ include_recipe 'role-balanced-commander'
 # integration boxes and not fuck us, we only run these in the live environment.
 include_recipe 'balanced::jobs'
 include_recipe 'precog::jobs'
+include_recipe 'rundeck-sql'
