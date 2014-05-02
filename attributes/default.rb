@@ -17,3 +17,5 @@ default['balanced-rundeck']['jobs']['failure_notify_url'] = 'https://cron.vandel
 # rundeck-sql
 default['rundeck-sql']['failure_email'] = 'risk+reports@balancedpayments.com'
 default['rundeck-sql']['failure_url'] = 'https://cron.vandelay.io'
+default['rundeck-sql']['success_email'] = 'risk+reports@balancedpayments.com'
+default['rundeck-sql']['success_url'] = 'https://cron.vandelay.io'
