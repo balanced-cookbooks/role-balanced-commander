@@ -11,3 +11,8 @@ gem 's3sync'
 
 gem 'chef', github: 'opscode/chef'
 gem 'buff-extensions', '= 0.5.0'
+
+gem 'vagrant', github: 'mitchellh/vagrant', ref: 'v1.4.3'
+gem 'vagrant-berkshelf', github: 'berkshelf/vagrant-berkshelf'
+gem 'vagrant-omnibus'
+gem 'net-ssh', '2.7.0'
