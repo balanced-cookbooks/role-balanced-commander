@@ -5,13 +5,13 @@ override['balanced-apt']['allow_unstable'] = node.chef_environment == 'test'
 default['rundeck']['port']              = 4440
 default['rundeck']['hostname']          = '127.0.0.1'
 
-default['balanced']['jobs']['failure_recipient'] = 'cron+balanced@balancedpayments.com'
+override['balanced']['jobs']['failure_recipient'] = 'cron+balanced@balancedpayments.com'
 default['balanced']['jobs']['failure_notify_url'] = 'https://cron.vandelay.io'
 
-default['precog']['jobs']['failure_recipient'] = 'cron+precog@balancedpayments.com'
+override['precog']['jobs']['failure_recipient'] = 'cron+precog@balancedpayments.com'
 default['precog']['jobs']['failure_notify_url'] = 'https://cron.vandelay.io'
 
-default['balanced-rundeck']['jobs']['failure_recipient'] = 'cron+infra@balancedpayments.com'
+override['balanced-rundeck']['jobs']['failure_recipient'] = 'cron+infra@balancedpayments.com'
 default['balanced-rundeck']['jobs']['failure_notify_url'] = 'https://cron.vandelay.io'
 
 # rundeck-sql
