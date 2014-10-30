@@ -7,4 +7,6 @@ default['rundeck']['proxy']['scheme'] = 'https'
 default['rundeck']['proxy']['default'] = true
 
 default['balanced-rundeck']['app_environment'] = 'integration'
-override['postgres']['archiver'] = 'db-integration-prod-mppbhl-s01.us-west-1.vandelay.io'
+
+# db prod integration read slave
+override['postgres']['archiver'] = 'db-prod-ep1om4-10-3-105-130.vandelay.io'

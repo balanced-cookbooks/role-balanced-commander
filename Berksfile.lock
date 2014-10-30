@@ -184,7 +184,7 @@ GRAPH
     yum-epel (>= 0.0.0)
   rabbitmq (2.4.2)
     erlang (>= 0.9.0)
-  role-balanced-commander (1.0.26)
+  role-balanced-commander (1.0.28)
     balanced (~> 1.2.14)
     balanced-devpi (~> 1.0)
     balanced-rundeck (~> 1.2.2)
