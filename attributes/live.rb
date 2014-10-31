@@ -8,9 +8,9 @@ default['rundeck']['proxy']['default'] = true
 
 default['balanced-rundeck']['app_environment'] = 'live'
 
-# TODO: remove setting this once we have prod db off of the legacy stacks
 default['balanced-rundeck']['jobs']['db']['specify_host'] = true
 default['balanced-rundeck']['jobs']['db']['archiver_query'] = 'roles:db-secondary-integration AND chef_environment:prod'
 default['balanced-rundeck']['jobs']['db']['archiver_environment'] = 'integration'
 
-override['postgres']['archiver'] = 'archiver-prod.db.vandelay.io'
+# db prod live read slave
+override['postgres']['archiver'] = 'db-prod-lu8spc-10-3-105-67.vandelay.io'

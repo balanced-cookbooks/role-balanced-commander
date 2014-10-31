@@ -8,5 +8,9 @@ default['rundeck']['proxy']['default'] = true
 
 default['balanced-rundeck']['app_environment'] = 'integration'
 
+default['balanced-rundeck']['jobs']['db']['specify_host'] = true
+default['balanced-rundeck']['jobs']['db']['archiver_query'] = 'roles:db-secondary-integration AND chef_environment:prod'
+default['balanced-rundeck']['jobs']['db']['archiver_environment'] = 'integration'
+
 # db prod integration read slave
-override['postgres']['archiver'] = 'db-prod-ep1om4-10-3-105-130.vandelay.io'
+override['postgres']['archiver'] = 'db-prod-em9x8h-10-3-105-176.vandelay.io'
