@@ -14,3 +14,17 @@ default['balanced-rundeck']['jobs']['db']['archiver_environment'] = 'integration
 
 # db prod live read slave
 override['postgres']['archiver'] = 'db-prod-lu8spc-10-3-105-67.vandelay.io'
+# specify the node to run the cluster backup on
+default['balanced-rundeck']['jobs']['db-infra-cluster']['nodes'] = [
+    {
+        'name' => 'db-prod-lu8spc-10-3-105-67.vandelay.io',
+        'description' => 'db-prod-lu8spc-10-3-105-67.vandelay.io',
+        'roles' => [],
+        'recipes' => [],
+        'fqdn' => 'db-prod-lu8spc-10-3-105-67.vandelay.io',
+        'os' => '',
+        'kernel_machine' => '',
+        'kernel_name' => '',
+        'kernel_release' => '',
+    }
+]
