@@ -20,8 +20,12 @@ source 'https://rubygems.org'
 
 gem 'test-kitchen', github: 'balanced-cookbooks/test-kitchen'
 gem 'kitchen-ec2', github: 'test-kitchen/kitchen-ec2'
-gem 'berkshelf', github: 'berkshelf/berkshelf'
+gem 'berkshelf', '~> 3.0.0'
 gem 'unf'
 gem 'kitchen-vagrant'
 gem 'vagrant-wrapper'
 gem 'foodcritic', '>= 3.0.3'
+
+gem 'vagrant', github: 'mitchellh/vagrant', ref: 'v1.4.3'
+gem 'net-ssh', '2.7.0'
+gem 'hashie', '>= 2.0.2', '<3.0.0'
