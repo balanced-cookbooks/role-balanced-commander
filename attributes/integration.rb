@@ -15,7 +15,7 @@ default['balanced-rundeck']['jobs']['db']['archiver_environment'] = 'integration
 # db prod integration read slave
 override['postgres']['archiver'] = 'db-prod-em9x8h-10-3-105-176.vandelay.io'
 # specify the node to run the cluster backup on
-default['balanced-rundeck']['jobs']['db-infra']['nodes'] = [
+default['balanced-rundeck']['jobs']['infra-db']['nodes'] = [
     {
         'name' => 'db-prod-em9x8h-10-3-105-176',
         'description' => 'db-prod-em9x8h-10-3-105-176',
@@ -29,7 +29,7 @@ default['balanced-rundeck']['jobs']['db-infra']['nodes'] = [
     }
 ]
 # specify the node to run the cluster backup on
-default['balanced-rundeck']['jobs']['db-infra-cluster']['nodes'] = [
+default['balanced-rundeck']['jobs']['infra-db-cluster']['nodes'] = [
     {
         'name' => 'db-prod-em9x8h-10-3-105-176',
         'description' => 'db-prod-em9x8h-10-3-105-176',
