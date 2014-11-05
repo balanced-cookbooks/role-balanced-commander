@@ -19,9 +19,9 @@ default['balanced-rundeck']['jobs']['infra-db']['nodes'] = [
     {
         'name' => 'db-prod-em9x8h-10-3-105-176',
         'description' => 'db-prod-em9x8h-10-3-105-176',
-        'roles' => [],
+        'roles' => ["db-secondary-#{node.app_environment}"],
         'recipes' => [],
-        'fqdn' => 'db-prod-em9x8h-10-3-105-176',
+        'fqdn' => 'db-prod-em9x8h-10-3-105-176.vandelay.io',
         'os' => '',
         'kernel_machine' => '',
         'kernel_name' => '',
@@ -31,11 +31,11 @@ default['balanced-rundeck']['jobs']['infra-db']['nodes'] = [
 # specify the node to run the cluster backup on
 default['balanced-rundeck']['jobs']['infra-db-cluster']['nodes'] = [
     {
-        'name' => 'db-prod-em9x8h-10-3-105-176',
-        'description' => 'db-prod-em9x8h-10-3-105-176',
-        'roles' => [],
+        'name' => 'db-prod-2kn9p6-10-3-104-111',
+        'description' => 'db-prod-2kn9p6-10-3-104-111',
+        'roles' => ["db-primary-#{node.app_environment}"],
         'recipes' => [],
-        'fqdn' => 'db-prod-em9x8h-10-3-105-176',
+        'fqdn' => 'db-prod-2kn9p6-10-3-104-111.vandelay.io',
         'os' => '',
         'kernel_machine' => '',
         'kernel_name' => '',
