@@ -4,7 +4,7 @@ maintainer_email 'dev@balancedpayments.com'
 license          'MIT'
 description      'Installs/Configures commander nodes'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '1.0.70'
+version          '1.0.72'
 
 depends          'role-base', '~> 1.0'
 depends          'balanced-devpi', '~> 1.0'

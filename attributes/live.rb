@@ -17,11 +17,11 @@ override['postgres']['archiver'] = 'db-prod-lu8spc-10-3-104-145.vandelay.io'
 # specify the node to run the cluster backup on
 default['balanced-rundeck']['jobs']['infra-db']['nodes'] = [
     {
-        'name' => 'db-prod-lu8spc-10-3-104-145',
-        'description' => 'db-prod-lu8spc-10-3-104-145',
+        'name' => 'db-prod-lu8spc-10-3-105-16',
+        'description' => 'db-prod-lu8spc-10-3-105-16',
         'roles' => ["db-secondary-#{node.app_environment}"],
         'recipes' => [],
-        'fqdn' => 'db-prod-lu8spc-10-3-104-145.vandelay.io',
+        'fqdn' => 'db-prod-lu8spc-10-3-105-16.vandelay.io',
         'os' => '',
         'kernel_machine' => '',
         'kernel_name' => '',
