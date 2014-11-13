@@ -19,3 +19,6 @@ default['rundeck-sql']['failure_email'] = 'risk+reports@balancedpayments.com'
 default['rundeck-sql']['failure_url'] = 'https://cron.vandelay.io'
 default['rundeck-sql']['success_email'] = 'risk+reports@balancedpayments.com'
 default['rundeck-sql']['success_url'] = 'https://cron.vandelay.io'
+
+# choose rundeck version
+default['rundeck']['version'] = '2.3.2'

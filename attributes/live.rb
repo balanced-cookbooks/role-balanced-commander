@@ -6,6 +6,11 @@ default['rundeck']['proxy']['port'] = 443
 default['rundeck']['proxy']['scheme'] = 'https'
 default['rundeck']['proxy']['default'] = true
 
+default['rundeck']['external_scheme'] = 'https'
+default['rundeck']['external_host'] = 'rundeck-live.vandelay.io'
+default['rundeck']['external_port'] = '443'
+
+
 default['balanced-rundeck']['app_environment'] = 'live'
 
 default['balanced-rundeck']['jobs']['db']['specify_host'] = true
