@@ -1,11 +1,7 @@
 DEPENDENCIES
-  balanced-rundeck
-    path: ../balanced-rundeck
   role-balanced-commander
     path: .
     metadata: true
-  rundeck
-    path: ../rundeck
 
 GRAPH
   apache2 (1.9.6)
@@ -89,7 +85,7 @@ GRAPH
     python (~> 1.4)
     rump (~> 1.0)
     slurp (~> 1.0)
-  balanced-rundeck (1.2.16)
+  balanced-rundeck (1.2.20)
     balanced-citadel (>= 0.0.0)
     balanced-user (~> 1.0.14)
     partial_search (~> 1.0.7)
@@ -190,7 +186,7 @@ GRAPH
     yum-epel (>= 0.0.0)
   rabbitmq (2.4.2)
     erlang (>= 0.9.0)
-  role-balanced-commander (1.0.74)
+  role-balanced-commander (1.0.76)
     balanced (~> 1.2.48)
     balanced-devpi (~> 1.0)
     balanced-rundeck (~> 1.2.8)
