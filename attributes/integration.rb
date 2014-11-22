@@ -6,10 +6,9 @@ default['rundeck']['proxy']['port'] = 443
 default['rundeck']['proxy']['scheme'] = 'https'
 default['rundeck']['proxy']['default'] = true
 
-default['rundeck']['external_scheme'] = 'https'
-default['rundeck']['external_host'] = 'rundeck-integration.vandelay.io'
-default['rundeck']['external_port'] = '443'
-
+override['rundeck']['external_scheme'] = 'https'
+override['rundeck']['external_hostname'] = 'rundeck-integration.vandelay.io'
+override['rundeck']['external_port'] = '443'
 
 default['balanced-rundeck']['app_environment'] = 'integration'
 
