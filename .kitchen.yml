@@ -1,4 +1,7 @@
 ---
+kitchen:
+  log_level: debug
+
 driver:
   name: vagrant
   customize:
@@ -40,3 +43,25 @@ suites:
       rundeck:
         proxy:
           default: false
+
+  - name: live
+    run_list:
+    - recipe[awscli::default]
+    - recipe[role-balanced-commander::live]
+    attributes:
+      solo_rb:
+        config:
+          log_level: ":debug"
+      citadel:
+        access_key_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
+        secret_access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
+      sentry:
+        enabled: false
+      rundeck:
+        proxy:
+          default: false
+      postgres:
+        integration:
+          slave: <%= ENV['DB_PROD_INTEGRATION'] %>
+        live:
+          slave: <%= ENV['DB_PROD_LIVE'] %>

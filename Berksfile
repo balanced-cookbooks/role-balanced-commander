@@ -5,6 +5,8 @@ metadata
 
 # Undo for local testing
 group :test do
+    cookbook 'awscli'
+    cookbook 'role-base', path: '../role-base'
     cookbook 'rundeck', path: '../rundeck'
-    cookbook 'balanced-rundeck', path: '../balanced-rundeck'
+    cookbook 'rundeck-fabric', path: '../rundeck-fabric'
 end
