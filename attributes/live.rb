@@ -47,3 +47,14 @@ default['balanced-rundeck']['jobs']['infra-db-cluster']['nodes'] = [
         'kernel_release' => '',
     }
 ]
+
+# where should reports go:
+override['rundeck-sql']['report_email_map'] = {
+    'last_fancy_shadow_account_settlement_line_items.sql' => {
+        'to' => ['dev@balancedpayments.com'],
+        'from' => 'automated-reports@balancedpayments.com',
+        'subject' => 'Fancy American Express Liabilities Report',
+        'bcc' => ['david@balancedpayments.com'],
+        'body' => "Automated report for #{DateTime.now.to_s.gsub(':', '-')}. See attached."
+    }
+}
